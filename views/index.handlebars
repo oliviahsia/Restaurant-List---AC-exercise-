@@ -19,9 +19,9 @@
 <!-- restaurant list -->
 <div class="container mt-5">
   <div class="row">
-    {{#each restaurants}}
     <div class="col-md-10 col-12 mx-auto">
       <div class="card-columns">
+        {{#each restaurants}}
         <a href="/restaurants/{{this.id}}" class="text-secondary">
           <div class="card mb-3">
             <img class="card-img-top" src="{{this.image}}" alt="Sababa 沙巴巴中東美食">
@@ -36,10 +36,11 @@
                 {{this.rating}}
                 <i class="fas fa-star fa-xs"></i>
               </span>
-              {{/each}}
+
             </div>
           </div>
         </a>
+        {{/each}}
       </div>
     </div>
   </div>
